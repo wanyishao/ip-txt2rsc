@@ -8,11 +8,6 @@ SOURCES = [
         "v4_list": "CN_IP",
         "v6_list": "CN_IPv6",
         "filename": "china_ip.rsc"
-    },
-    {
-        "url": "https://ispip.clang.cn/all_cn_ipv6.txt",
-        "v6_list": "CN_IPv6_High",
-        "filename": "precision_v6.rsc"
     }
 ]
 
