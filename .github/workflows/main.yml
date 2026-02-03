@@ -22,6 +22,22 @@ jobs:
       - name: Run Converter
         run: python convert.py
 
+      - name: Check if file exists
+        run: |
+          ls -lh  # 调试用：列出当前目录所有文件
+          if [ ! -f "cn6.rsc" ]; then
+            echo "错误：cn6.rsc 未生成！"
+            exit 1
+          fi
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add cn6.rsc
+          # 使用 git diff 检查是否有变化，没变化就不 commit，防止报错
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update IPv6 List $(date +%F)" && git push)
+
       - name: Upload RSC to Repository
         run: |
           git config --global user.name "GitHub Action"
