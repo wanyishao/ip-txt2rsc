@@ -1,12 +1,14 @@
-name: Sync Address Lists to ROS
+name: Sync IP Lists to ROS
 on:
   schedule:
-    - cron: '0 2 * * *'  # 每天凌晨 2 点运行
-  workflow_dispatch:      # 允许手动点运行按钮
+    - cron: '0 2 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: # 显式声明权限，防止 403 错误
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -16,9 +18,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
-        run: pip install requests
-
       - name: Run Converter
         run: python convert.py
 
@@ -27,14 +26,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 1. 动态添加当前目录下所有的 .rsc 文件
-          git add *.rsc
+          # 仅添加 output 文件夹下的所有 rsc 文件
+          git add output/*.rsc
           
-          # 2. 检查是否有文件变动（防止没有更新时 commit 报错）
-          # git diff --staged --quiet 检查暂存区是否有变化
-          if git diff --staged --quiet; then
-            echo "没有发现任何变化，跳过提交。"
-          else
-            git commit -m "自动更新 IP 列表: $(date +'%Y-%m-%d %H:%M')"
+          if ! git diff --staged --quiet; then
+            git commit -m "Update IP Lists in output/ $(date +'%Y-%m-%d %H:%M')"
             git push
+          else
+            echo "没有内容变化。"
           fi
