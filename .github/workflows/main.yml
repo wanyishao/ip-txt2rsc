@@ -34,14 +34,5 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add cn6.rsc
-          # 使用 git diff 检查是否有变化，没变化就不 commit，防止报错
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update IPv6 List $(date +%F)" && git push)
-
-      - name: Upload RSC to Repository
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git add cn6.rsc
-          git commit -m "Update IPv6 List" || exit 0
-          git push
+          git add cn_ipv4.rsc cn_ipv6.rsc
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update IP Lists $(date +%F)" && git push)
