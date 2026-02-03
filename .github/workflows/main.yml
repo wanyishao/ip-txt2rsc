@@ -1,4 +1,4 @@
-name: Sync IPv6 to ROS
+name: Sync Address Lists to ROS
 on:
   schedule:
     - cron: '0 2 * * *'  # 每天凌晨 2 点运行
