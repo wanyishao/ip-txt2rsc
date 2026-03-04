@@ -3513,6 +3513,7 @@
 /ip firewall address-list add list="CN_IP" address=156.107.179.0/24
 /ip firewall address-list add list="CN_IP" address=156.107.181.0/24
 /ip firewall address-list add list="CN_IP" address=157.0.0.0/16
+/ip firewall address-list add list="CN_IP" address=157.10.35.0/24
 /ip firewall address-list add list="CN_IP" address=157.10.112.0/23
 /ip firewall address-list add list="CN_IP" address=157.15.74.0/23
 /ip firewall address-list add list="CN_IP" address=157.15.94.0/23
