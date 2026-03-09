@@ -3277,7 +3277,15 @@
 /ip firewall address-list add list="CN_IP" address=124.68.224.0/20
 /ip firewall address-list add list="CN_IP" address=124.68.248.0/21
 /ip firewall address-list add list="CN_IP" address=124.69.0.0/16
-/ip firewall address-list add list="CN_IP" address=124.70.0.0/15
+/ip firewall address-list add list="CN_IP" address=124.70.0.0/16
+/ip firewall address-list add list="CN_IP" address=124.71.0.0/17
+/ip firewall address-list add list="CN_IP" address=124.71.128.0/18
+/ip firewall address-list add list="CN_IP" address=124.71.192.0/19
+/ip firewall address-list add list="CN_IP" address=124.71.224.0/20
+/ip firewall address-list add list="CN_IP" address=124.71.240.0/21
+/ip firewall address-list add list="CN_IP" address=124.71.248.0/23
+/ip firewall address-list add list="CN_IP" address=124.71.251.0/24
+/ip firewall address-list add list="CN_IP" address=124.71.252.0/22
 /ip firewall address-list add list="CN_IP" address=124.72.0.0/13
 /ip firewall address-list add list="CN_IP" address=124.88.0.0/13
 /ip firewall address-list add list="CN_IP" address=124.108.8.0/21
