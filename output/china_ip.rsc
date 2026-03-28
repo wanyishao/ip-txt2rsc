@@ -2070,7 +2070,7 @@
 /ip firewall address-list add list="CN_IP" address=103.219.24.0/21
 /ip firewall address-list add list="CN_IP" address=103.219.32.0/21
 /ip firewall address-list add list="CN_IP" address=103.219.64.0/24
-/ip firewall address-list add list="CN_IP" address=103.219.84.0/23
+/ip firewall address-list add list="CN_IP" address=103.219.84.0/22
 /ip firewall address-list add list="CN_IP" address=103.219.88.0/22
 /ip firewall address-list add list="CN_IP" address=103.219.100.0/22
 /ip firewall address-list add list="CN_IP" address=103.219.184.0/22
