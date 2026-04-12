@@ -3008,9 +3008,7 @@
 /ip firewall address-list add list="CN_IP" address=120.132.240.0/20
 /ip firewall address-list add list="CN_IP" address=120.133.0.0/16
 /ip firewall address-list add list="CN_IP" address=120.134.0.0/15
-/ip firewall address-list add list="CN_IP" address=120.136.16.0/23
-/ip firewall address-list add list="CN_IP" address=120.136.18.0/24
-/ip firewall address-list add list="CN_IP" address=120.136.20.0/22
+/ip firewall address-list add list="CN_IP" address=120.136.16.0/21
 /ip firewall address-list add list="CN_IP" address=120.136.128.0/18
 /ip firewall address-list add list="CN_IP" address=120.137.0.0/17
 /ip firewall address-list add list="CN_IP" address=120.143.128.0/19
