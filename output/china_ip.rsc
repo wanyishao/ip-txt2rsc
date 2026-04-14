@@ -481,7 +481,7 @@
 /ip firewall address-list add list="CN_IP" address=43.176.0.0/12
 /ip firewall address-list add list="CN_IP" address=43.192.0.0/16
 /ip firewall address-list add list="CN_IP" address=43.193.0.0/18
-/ip firewall address-list add list="CN_IP" address=43.193.64.0/24
+/ip firewall address-list add list="CN_IP" address=43.193.64.0/23
 /ip firewall address-list add list="CN_IP" address=43.194.0.0/16
 /ip firewall address-list add list="CN_IP" address=43.195.0.0/20
 /ip firewall address-list add list="CN_IP" address=43.196.0.0/16
