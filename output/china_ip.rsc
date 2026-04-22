@@ -1827,6 +1827,7 @@
 /ip firewall address-list add list="CN_IP" address=103.103.51.0/24
 /ip firewall address-list add list="CN_IP" address=103.103.200.0/22
 /ip firewall address-list add list="CN_IP" address=103.103.224.0/22
+/ip firewall address-list add list="CN_IP" address=103.104.152.0/22
 /ip firewall address-list add list="CN_IP" address=103.104.252.0/22
 /ip firewall address-list add list="CN_IP" address=103.105.0.0/22
 /ip firewall address-list add list="CN_IP" address=103.105.12.0/22
