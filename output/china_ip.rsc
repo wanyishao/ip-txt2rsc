@@ -5303,8 +5303,8 @@
 /ip firewall address-list add list="CN_IP" address=211.101.0.0/16
 /ip firewall address-list add list="CN_IP" address=211.102.0.0/17
 /ip firewall address-list add list="CN_IP" address=211.102.128.0/21
-/ip firewall address-list add list="CN_IP" address=211.102.144.0/20
-/ip firewall address-list add list="CN_IP" address=211.102.160.0/19
+/ip firewall address-list add list="CN_IP" address=211.102.144.0/21
+/ip firewall address-list add list="CN_IP" address=211.102.160.0/20
 /ip firewall address-list add list="CN_IP" address=211.102.192.0/18
 /ip firewall address-list add list="CN_IP" address=211.103.0.0/16
 /ip firewall address-list add list="CN_IP" address=211.136.0.0/24
