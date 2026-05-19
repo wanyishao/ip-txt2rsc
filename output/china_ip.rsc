@@ -1994,6 +1994,7 @@
 /ip firewall address-list add list="CN_IP" address=103.200.220.0/22
 /ip firewall address-list add list="CN_IP" address=103.200.224.0/19
 /ip firewall address-list add list="CN_IP" address=103.201.192.0/24
+/ip firewall address-list add list="CN_IP" address=103.201.196.0/22
 /ip firewall address-list add list="CN_IP" address=103.202.0.0/19
 /ip firewall address-list add list="CN_IP" address=103.202.32.0/20
 /ip firewall address-list add list="CN_IP" address=103.202.92.0/22
